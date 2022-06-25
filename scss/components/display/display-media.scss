@@ -1,0 +1,20 @@
+.display {
+
+  @media (min-width: 320px) and (max-width: 576px) {
+
+    &__input{
+      width: 100%;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+
+  @media (min-width: 576px) {
+
+    .btn-secondary {
+      padding: 5px 44px 5px 15px;
+    }
+  }
+}

@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DUO.project</title>
+  <link rel="shortcut icon" href="../assets/images/house.svg" type="image/svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="header__contact">
+            <a href="tel:+330499632050">
+              <i class="bi bi-telephone header__contact-icon"></i>
+              <span>+33 (0)4 99 63 20 50</span></a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="header__lang-switcher justify-content-end d-flex">
+            <div class="dropdown">
+              <button class="btn btn-sm dropdown-toggle p-0 border-0" type="button" id="lang-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe header__contact-icon"></i>
+                <span>English</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                <li>
+                  <button class="dropdown-item" type="button">Ukrainian</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">Polish</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">Deutsch</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            <li class="nav-item header__search-wrapper d-flex align-items-center">
+              <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="bi bi-search"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-0" href="#" id="productsDropdown" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="#">Products #1</a></li>
+                <li><a class="dropdown-item" href="#">Products #2</a></li>
+                <li><a class="dropdown-item" href="#">Products #3</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-0" href="#" id="applicationsDropdown" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                Applications
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="applicationsDropdown">
+                <li><a class="dropdown-item" href="#">Applications #1</a></li>
+                <li><a class="dropdown-item" href="#">Applications #2</a></li>
+                <li><a class="dropdown-item" href="#">Applications #3</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link p-0" href="#">Documentation</a>
+            </li>
+          </ul>
+          <div class="d-flex header__auth">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+              <i class="bi bi-person"></i>
+            </a>
+
+
+            <a data-bs-toggle="offcanvas" href="#cartSection" role="button" aria-controls="offcanvasExample">
+              <i class="bi bi-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+        <ul class="menu__choise d-flex align-items-center">
+          <li><a class="menu__item active" href="#">Products</a></li>
+          <li><div class="menu__item-border"></div></li>
+          <li><a class="menu__item" href="#">Display Wall</a></li>
+          <li><div class="menu__item-border"></div></li>
+          <li><a class="menu__item" href="#">Products</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="display">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <h1>Display Wall</h1>
+        </div>
+        <div class="display__btn col-md-3 col-sm-5">
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-lg" type="button">
+              Display Wall
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>Display</li>
+              <li>Wall</li>
+            </ul>
+          </div>
+        </div>
+        <div class="display__input col-md-9 col-sm-7">
+          <form>
+            <label class="display__label">
+              <input class="display__search" type="text" placeholder="Search">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="choise">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <aside>
+            <div class="choise__aside-text d-flex direction-row">
+              <p class="choise__text mt-3">23 Results</p>
+              <div class="choise__close text-danger mt-3">
+                <i class="bi bi-x-circle"></i>
+                <a class="choise__clear-btn text-danger" href="#">Clear all Filters</a>
+              </div>
+            </div>
+
+
+            <div class="choise__accordions">
+
+              <div class="accordion">
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFirst">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFirst" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Subcategory
+                    </button>
+                  </h2>
+                  <div id="collapseFirst" class="accordion-collapse collapse" aria-labelledby="headingFirst"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio" checked>
+                        <label class="form-check-label d-flex" for="radio">
+                          Xpressions <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio1" checked>
+                        <label class="form-check-label d-flex" for="radio1">
+                          Xtension <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio2">
+                        <label class="form-check-label d-flex" for="radio2">
+                          Virage <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio3">
+                        <label class="form-check-label d-flex" for="radio3">
+                          Contour) <p class="choise__radio-text">(4)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio4">
+                        <label class="form-check-label d-flex" for="radio4">
+                          Xperience <p class="choise__radio-text">(4)</p>
+                        </label>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Type
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio5" checked>
+                        <label class="form-check-label d-flex" for="radio5">
+                          Pop-up <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio6" checked>
+                        <label class="form-check-label d-flex" for="radio6">
+                          Tubar <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio7">
+                        <label class="form-check-label d-flex" for="radio7">
+                          Table top <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Features
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio8">
+                        <label class="form-check-label d-flex" for="radio8">
+                          Backlit <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio9" checked>
+                        <label class="form-check-label d-flex" for="radio9">
+                          TV Mount <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio10">
+                        <label class="form-check-label d-flex" for="radio10">
+                          Shelving <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio11">
+                        <label class="form-check-label d-flex" for="radio11">
+                          Arch <p class="choise__radio-text">(4)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio12">
+                        <label class="form-check-label d-flex" for="radio12">
+                          Double sided <p class="choise__radio-text">(4)</p>
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                      Width
+                    </button>
+                  </h2>
+                  <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                       data-bs-parent="#accordionfour">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio13" checked>
+                        <label class="form-check-label d-flex" for="radio13">
+                          2.5 <p class="choise__radio-text">(7)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio14" checked>
+                        <label class="form-check-label d-flex" for="radio14">
+                          5 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio15">
+                        <label class="form-check-label d-flex" for="radio15">
+                          8 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio16">
+                        <label class="form-check-label d-flex" for="radio16">
+                          10 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio17">
+                        <label class="form-check-label d-flex" for="radio17">
+                          20 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Height
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio18">
+                        <label class="form-check-label d-flex" for="radio18">
+                          4 <p class="choise__radio-text">(7)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio19">
+                        <label class="form-check-label d-flex" for="radio19">
+                          8 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio20">
+                        <label class="form-check-label d-flex" for="radio20">
+                          10 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Form
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio21">
+                        <label class="form-check-label d-flex" for="radio21">
+                          Straight <p class="choise__radio-text">(7)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio22">
+                        <label class="form-check-label d-flex" for="radio22">
+                          Curved <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Price Range
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio23">
+                        <label class="form-check-label d-flex" for="radio23">
+                          550-699 <p class="choise__radio-text">(27)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio24">
+                        <label class="form-check-label d-flex" for="radio24">
+                          700-999 <p class="choise__radio-text">(38)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio25">
+                        <label class="form-check-label d-flex" for="radio25">
+                          1000-1999 <p class="choise__radio-text">(48)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio26">
+                        <label class="form-check-label d-flex" for="radio26">
+                          2000-3999 <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio27">
+                        <label class="form-check-label d-flex" for="radio27">
+                          4000+ <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      Set-up Time
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                       data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio28">
+                        <label class="form-check-label d-flex" for="radio28">
+                          1+ (Fast) <p class="choise__radio-text">(27)</p>
+                        </label>
+                      </div>
+
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio29" checked>
+                        <label class="form-check-label d-flex" for="radio29">
+                          5+ (Easy) <p class="choise__radio-text">(38)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio30">
+                        <label class="form-check-label d-flex" for="radio30">
+                          10+ (Average) <p class="choise__radio-text">(48)</p>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="radio31">
+                        <label class="form-check-label d-flex" for="radio31">
+                          20+ (Expert) <p class="choise__radio-text">(8)</p>
+                        </label>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="choise__wrapper col-md-9 col-sm-12">
+
+          <div class="choise__cards row">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag-1.svg" alt="img"></span>
+                  <span><img class="choise__tag1" src="../assets/images/tag-2.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="choise__cards row">
+
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag-1.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 8x8
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="choise__cards row">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag-1.svg" alt="img"></span>
+                  <span><img class="choise__tag1" src="../assets/images/tag-2.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="choise__cards row">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag-1.svg" alt="img"></span>
+                  <span><img class="choise__tag1" src="../assets/images/tag-2.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="choise__cards choise__bottom row">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-1.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <span><img class="choise__tag" src="../assets/images/tag-1.svg" alt="img"></span>
+                  <span><img class="choise__tag1" src="../assets/images/tag-2.svg" alt="img"></span>
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-2.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="choise__card">
+                  <div class="choise__images d-flex">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                    <img class="choise__image" src="../assets/images/img-3.svg" alt="img">
+                  </div>
+                  <p class="choise__text-description text-center">
+                    Contour 10x4
+                  </p>
+                  <p class="choise__price text-center">
+                    8123,99 €
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="choise__next d-flex">
+
+            <div class="choise__next-ls d-flex align-items-center">
+
+              <a href="#"><i class="choise__grey-btn bi bi-arrow-left"></i></a>
+
+
+              <p class="choise__next-text">Page</p>
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link choise__first-page" href="#">1</a></li>
+                </ul>
+              </nav>
+
+              <p class="choise__next-text">of 128</p>
+
+              <a class="page-link" href="#"><i class="choise__green-btn bi bi-arrow-right"></i></a>
+
+
+            </div>
+
+            <div class="choise__next-rs">
+
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  50
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">60</a></li>
+                  <li><a class="dropdown-item" href="#">70</a></li>
+                  <li><a class="dropdown-item" href="#">80</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row row">
+      <div class="col-3 footer__contact">
+        <img class="footer__contact-logo" src="../assets/images/footer-logo.svg" alt="logo">
+        <div class="footer__contact-adress d-flex">
+          <i class="bi bi-geo-alt-fill"></i>
+          <address>344, rue Jardin Colar - 34130
+            LANSARGUES - FRANCE
+          </address>
+        </div>
+        <div class="footer__contact-phone">
+          <a href="tel:+330499632050">
+            <i class="bi bi-telephone"></i>
+            <span>+33 (0)4 99 63 20 50</span>
+          </a>
+        </div>
+        <div class="footer__contact-email">
+          <a href="mailto:sales@duodisplay.com">
+            <i class="bi bi-envelope-fill"></i>
+            <span>sales@duodisplay.com</span>
+          </a>
+        </div>
+
+        <img class="footer__france-img" src="../assets/images/france.png" alt="Made in France">
+      </div>
+      <div class="col-6 footer__navigation">
+        <div class="row">
+          <div class="footer__navigation-item col-3">
+            <h3 class="footer__navigation-title">Products</h3>
+            <ul class="p-0">
+              <li class="footer__product"><a href="#">Banner stands</a></li>
+              <li class="footer__product"><a href="#">Display Wall</a></li>
+              <li class="footer__product"><a href="#">Counters</a></li>
+              <li class="footer__product"><a href="#">Outdoor</a></li>
+              <li class="footer__product"><a href="#">Frames</a></li>
+              <li class="footer__product"><a href="#">Stands</a></li>
+              <li class="footer__product"><a href="#">Outdoor</a></li>
+              <li class="footer__product"><a href="#">Frames</a></li>
+              <li class="footer__product"><a href="#">Stands</a></li>
+            </ul>
+          </div>
+          <div class="footer__navigation-item col-3">
+            <h3 class="footer__navigation-title">Applications</h3>
+            <ul class="p-0">
+              <li class="footer__applications"><a href="#">Tradeshows</a></li>
+              <li class="footer__applications"><a href="#">Events</a></li>
+              <li class="footer__applications"><a href="#">Road-shows</a></li>
+              <li class="footer__applications"><a href="#">Decoration</a></li>
+              <li class="footer__applications"><a href="#">Retail</a></li>
+              <li class="footer__applications"><a href="#">Printing</a></li>
+            </ul>
+          </div>
+          <div class="footer__navigation-item col-3">
+            <h3 class="footer__navigation-title">My Profile</h3>
+            <ul class="p-0">
+              <li class="footer__profile"><a href="#">Dashboard</a></li>
+              <li class="footer__profile"><a href="#">Account</a></li>
+              <li class="footer__profile"><a href="#">Orders</a></li>
+              <li class="footer__profile"><a href="#">Quotes</a></li>
+              <li class="footer__profile"><a href="#">My Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer__navigation-item col-3">
+            <h3 class="footer__navigation-title">Duo Display</h3>
+            <ul class="p-0">
+              <li class="footer__display"><a href="#">About Duo</a></li>
+              <li class="footer__display"><a href="#">General terms</a></li>
+              <li class="footer__display"><a href="#">Warranty</a></li>
+              <li class="footer__display"><a href="#">Legal notice</a></li>
+              <li class="footer__display"><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 footer__news">
+        <h4 class="footer__news-title">Newsletter </h4>
+        <form class="footer__news-form">
+          <label>
+            <input type="email" placeholder="Your email adress">
+            <button type="submit"><i class="bi bi-arrow-right-circle-fill"></i></button>
+          </label>
+        </form>
+        <div class="footer__lang-switcher d-flex">
+          <div class="footer__dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="lang-menu-footer" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+              <i class="bi bi-globe footer__contact-icon"></i>
+              <span>English</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="lang-menu-footer">
+              <li>
+                <button class="dropdown-item" type="button">Ukrainian</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Polish</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Deutsch</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="footer__social d-flex direction-row">
+              <a href="#"><img src="../assets/images/1.svg" alt="social"></a>
+              <a href="https://twitter.com/"><img src="../assets/images/2.svg" alt="social"></a>
+              <a href="https://www.facebook.com/"><img src="../assets/images/3.svg" alt="social"></a>
+              <a href="https://www.instagram.com/"><img src="../assets/images/4.svg" alt="social"></a>
+              <a href="https://www.linkedin.com/"><img src="../assets/images/5.svg" alt="social"></a>
+              <a href="https://www.youtube.com/"><img src="../assets/images/6.svg" alt="social"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row footer__black-line">
+      <div class="col-10">
+        <div class="footer__copywrite d-flex">
+          <p>© 2021 Duo Industrie. All rights reserved. From Duo with</p>
+          <i class="bi bi-heart"></i>
+        </div>
+      </div>
+      <div class="col-2">
+        <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Modal Search -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">Search product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Register -->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Register form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Password</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        </div>
+
+        <div class="mb-3">
+          <label for="repeatPasswordInput" class="form-label">Repeat password</label>
+          <input type="password" class="form-control" id="repeatPasswordInput" placeholder="Repeat password">
+        </div>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart section -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartSectionLabel">Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Your cart is empty.
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

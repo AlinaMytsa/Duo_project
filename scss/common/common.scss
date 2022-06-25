@@ -1,0 +1,22 @@
+body{
+  font-size: $medium-fs;
+  font-weight: $regular-fw;
+  font-family: $main-font;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    color: $accent-color;
+    transition: $transition;
+  }
+}

@@ -1,0 +1,53 @@
+.header{
+
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+
+  &__top{
+    background-color: $main-bg;
+    font-size: $small-fs;
+    padding: 5px 0;
+  }
+
+  &__contact-icon{
+    padding-right: 10px;
+  }
+
+  &__lang-switcher{
+    button,
+    .dropdown-item{
+      font-size: $small-fs;
+    }
+  }
+
+  &__search-wrapper{
+    margin-right: 65px;
+  }
+
+&__search{
+  font-size: $header__icons-font;
+  display: flex;
+  align-items: center;
+}
+
+  &__nav{
+
+    .nav-item {
+
+      &:not(:first-child):not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__auth{
+    gap: 20px;
+
+    i.bi-person{
+      font-size: calc(#{$header__auth-size} * 1.05);
+    }
+
+    i.bi-cart{
+      font-size: $header__auth-size;
+    }
+  }
+}

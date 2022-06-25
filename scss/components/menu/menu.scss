@@ -1,0 +1,20 @@
+.menu{
+  background-color: $main-bg;
+  .active{
+    color: $accent-color;
+  }
+  &__choise{
+    gap: 8px;
+  }
+
+  &__item{
+    color: #43464C;
+    font-size: $small-fs;
+
+    &-border{
+      height: 1px;
+      width: 26px;
+      background-color: $grey-color;
+    }
+  }
+}

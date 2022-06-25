@@ -1,0 +1,32 @@
+.display{
+  background-color: $main-bg;
+  padding: 10px 0 20px 0;
+
+  h1{
+    font-weight: $semibold-fw;
+    font-size: $font-xl;
+  }
+
+
+  .btn-secondary{
+    color: black;
+    border: none ;
+    background-color: $white;
+    padding: 15px 44px 15px 15px;
+    border-radius: $border-radius;
+    font-size: $medium-fs;
+  }
+
+  &__label{
+    width: 100%;
+  }
+
+  &__search{
+    padding: 16px 0 16px 39px;
+    border-radius: $border-radius;
+    width: 100%;
+    border: none ;
+    background-color: $white;
+    box-shadow: $box-shadow;
+  }
+}

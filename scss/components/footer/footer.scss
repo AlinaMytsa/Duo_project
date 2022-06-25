@@ -1,0 +1,110 @@
+.footer{
+
+  background-color: $footer-bg;
+padding-top: 47px;
+
+  &__contact{
+    color: $grey-color;
+
+    i{
+      margin-right: 8px;
+    }
+
+    a{
+      color:$grey-color;
+    }
+
+    &-logo{
+      margin-bottom: 16px;
+    }
+
+    &-adress{
+      max-width: 80%;
+    }
+
+    &-phone{
+      margin-bottom: 22px;
+    }
+
+    &-email{
+      margin-bottom: 25px;
+    }
+  }
+  &__navigation {
+
+    a{
+      color: $grey-color;
+    }
+
+    &-title {
+      color: $grey-color;
+      font-size: $bigger-fs;
+      font-weight: $semibold-fw;
+      margin-bottom: 16px;
+    }
+  }
+
+
+  &__news-title{
+    font-weight: $semibold-fw;
+    font-size: $bigger-fs;
+    color: $white;
+    margin-bottom: 23px;
+  }
+
+  &__news-form{
+    position: relative;
+
+    input{
+      background-color: transparent;
+      border-radius: 39px;
+      border: 1px solid $grey-color;
+      padding: 13px 29px;
+      margin-bottom: 8px;
+    }
+
+    button{
+      position: absolute;
+      left: 56%;
+      top: 24%;
+      color: $accent-color;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__dropdown{
+
+
+    button{
+      color: $grey-color;
+      background-color: transparent;
+      border-radius: 39px;
+      border: 1px solid $grey-color;
+      padding: 13px 29px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__social{
+    gap: 5px;
+  }
+
+  &__copywrite {
+    color: $grey-color;
+    gap: 20px;
+    font-weight: $semibold-fw;
+    font-size: $small-fs;
+    padding: 10px 0 0 0;
+  }
+
+
+  &__black-line{
+
+    .bi-arrow-up-circle-fill{
+      color: #99C63C;
+      font-size: 30px;
+    }
+  }
+
+}

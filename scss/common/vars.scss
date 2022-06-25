@@ -1,0 +1,42 @@
+:root{
+--bs-link-color: #000;
+
+}
+
+.navbar{
+  --bs-navbar-brand-margin-end: 46px ;
+  --bs-navbar-color: black;
+}
+
+.accordion{
+  --bs-accordion-bg: none;
+  --bs-accordion-btn-bg: none;
+  --bs-accordion-border-width: none;
+}
+
+$main-font: 'Lato', sans-serif;
+
+$regular-fw: 400;
+$semibold-fw: 700;
+$bold-fw: 900;
+
+$xs-font-size: 12px;
+$small-fs: 13px;
+$medium-fs: 15px;
+$header__icons-font: 16px;
+$bigger-fs: 17px;
+$header__auth-size: 22px;
+$font-xl: 28px;
+
+$main-bg: #F4F4F4;
+$accent-color: #99C63C;
+$white: #fff;
+$red-color:#EB5757;
+$grey-color:#BDBDBE;
+$footer-bg:#26282C;
+
+$transition: .4s;
+
+$border-radius: 30px;
+
+$box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
